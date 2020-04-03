@@ -58,5 +58,20 @@ namespace AppTasks.Services
             }
         }
 
+        public async Task<string> ConvertImageFileToBase64(string filePath)
+        {
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                FileStream stream = File.Open(filePath, FileMode.Open);
+                byte[] bytes = new byte[stream.Length];
+                await stream.ReadAsync(bytes, 0, (int)stream.Length);
+                return System.Convert.ToBase64String(bytes);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 }
