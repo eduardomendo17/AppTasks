@@ -21,6 +21,11 @@
             Text="Finalizado" />
         <Switch
             IsToggled="{Binding TaskSelected.Done}" />
+        <Label
+            Text="Imagen de la tarea" />
+        <Entry
+            Text="{Binding TaskSelected.ImageUrl}" />
+        <Image Source="{Binding ImageSource_}" WidthRequest="100" />
         <Button
             Text="Guardar"
             Command="{Binding SaveCommand}" />

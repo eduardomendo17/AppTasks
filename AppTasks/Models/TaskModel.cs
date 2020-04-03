@@ -16,5 +16,9 @@ namespace AppTasks.Models
         public string Notes { get; set; }
         
         public bool Done { get; set; }
+
+        public string ImageUrl { get; set; }
+
+        public string ImageBase64 { get; set; }
     }
 }
