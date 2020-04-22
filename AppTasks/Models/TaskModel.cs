@@ -1,6 +1,7 @@
 ﻿using SQLite;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace AppTasks.Models
@@ -16,8 +17,6 @@ namespace AppTasks.Models
         public string Notes { get; set; }
         
         public bool Done { get; set; }
-
-        public string ImageUrl { get; set; }
 
         public string ImageBase64 { get; set; }
     }
