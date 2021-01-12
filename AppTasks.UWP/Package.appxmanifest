@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="9a7fb780-b7df-4243-93a9-3a048444b895"
-    Publisher="CN=c6c2f330-c762-4d22-a283-2892197f16de"
+    Name="56411Impetec.AppTasks"
+    Publisher="CN=41FF6FB2-F757-4037-A41D-6625ECE341DF"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="88f6b1ef-15fc-40d4-83e6-841050c8b7cd" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>AppTasks.UWP</DisplayName>
-    <PublisherDisplayName>c6c2f330-c762-4d22-a283-2892197f16de</PublisherDisplayName>
+    <DisplayName>AppTasks</DisplayName>
+    <PublisherDisplayName>Impetec</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,7 +32,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="AppTasks.UWP.App">
       <uap:VisualElements
-        DisplayName="AppTasks.UWP"
+        DisplayName="AppTasks"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="AppTasks.UWP"
@@ -51,6 +51,7 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer"/>
     <DeviceCapability Name="webcam"/>
   </Capabilities>
 </Package>
